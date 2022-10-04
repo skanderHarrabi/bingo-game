@@ -3,10 +3,10 @@ import classNames from 'classnames';
 import { CardItem } from '../../classes/cardItem';
 import {default_data} from '../../assets/data';
 
-import './matrice.scss';
+import './matrix.scss';
 
 
-export const Matrice = ({setIsBingo}) => {
+export const Matrix = ({setIsBingo}) => {
     const [oldBingos, setOldBingos] = useState([]);
     const [bingoMatrix_selected_states, setBingoMatrix_selected_states] = useState([]);
 
