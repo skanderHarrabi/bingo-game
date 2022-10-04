@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Bingo Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple game made for scrum teams, it allow users to select item from the card and if you get a full diagonal, row or column selected you get a BINGO
+(ps: you can have multiple bingos)
+Have fun 😇
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+```sh
+$ cd bingo-game
+$ npm install
+```
+### Runing the app
+Starting react app at port 3000
+```sh
+$ npm start
+```
 
-### `npm start`
+### ScreenShots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1278" alt="Screenshot 2022-10-04 at 23 17 16" src="https://user-images.githubusercontent.com/36156046/193933546-707a7d48-e61c-4692-9dde-39b39f65f6e0.png">
+<img width="1277" alt="Screenshot 2022-10-04 at 23 17 29" src="https://user-images.githubusercontent.com/36156046/193933558-4e02272f-1e30-4ba7-9f57-1fcd3017fb8f.png">
+<img width="645" alt="Screenshot 2022-10-04 at 23 17 39" src="https://user-images.githubusercontent.com/36156046/193933565-715fe737-9a4c-4f5d-b708-272d73144e91.png">
