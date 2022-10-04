@@ -1,0 +1,19 @@
+.card {
+  position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: #fcad26;
+    display: block;
+    height: 75px;
+    border-radius: 8px;
+    box-shadow: 0px 9px 0px #efa424, 0px 9px 25px rgba(0,0,0,.3);
+    text-align: center;
+  transition: all .1s ease;
+}
+
+.active {
+    box-shadow: 0px 3px 0px #be8116, 0px 3px 6px rgba(0,0,0,.7);
+    background-color: #ce8a16;
+    position: relative;
+    top: 6px;
+  }

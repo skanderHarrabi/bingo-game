@@ -1,0 +1,30 @@
+.neon-text {
+    font-family: neon;
+    color: rgb(23, 139, 241);
+    animation: flicker 1.5s infinite alternate;
+  }
+
+.regular-text {
+    font-family: neon;
+    color: rgb(23, 139, 241);
+    text-shadow:
+    .1vw 0vw .25vw rgb(23, 139, 241), .2vw 0vw .25vw rgb(23, 139, 241), .4vw 0vw .25vw rgb(23, 139, 241),
+}
+
+
+@keyframes flicker {
+
+    0%, 10%, 40%, 50%, 80%, 90%, 100% {
+
+    text-shadow:
+    .1vw 0vw .25vw rgb(23, 139, 241), .2vw 0vw .25vw rgb(23, 139, 241), .4vw 0vw .25vw rgb(23, 139, 241),
+    .05vw 0vw   0vw #00539CFF, .1vw 0vw   0vw #00539CFF, .4vw 0vw   0vw #00539CFF,
+    .05vw 0vw  .05vw #00539CFF, .1vw 0vw  .05vw #00539CFF, .4vw 0vw  .05vw #00539CFF,
+    .05vw 0vw   1vw #00539CFF, .1vw 0vw   1vw #00539CFF, .4vw 0vw   1vw #00539CFF,
+
+    }
+
+    20%, 30%, 60%, 70%{
+        text-shadow: none;
+    }
+}

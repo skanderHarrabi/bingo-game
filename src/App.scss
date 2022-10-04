@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "neon";
+  src: url(./fonts/neon/hellodenverdisplaybold_v1.6.ttf);
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fcd04b;
+  height: 100vh;
+  width: 100vw;
+}

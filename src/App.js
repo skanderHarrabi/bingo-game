@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import './App.scss';
+import { Matrice } from './components/matrice/matrice';
+import { CelebrationAnimation } from './components/celebration/celebrationAnimation';
+import { Header } from './components/header/header';
+
 
 function App() {
+  const [isBingo, setIsBingo] = useState(false);
+
+  useEffect(()=> {
+    const t = setTimeout(()=> {
+      setIsBingo(false);
+    },[8000]);
+
+    return () => {
+      clearTimeout(t);
+    }
+  },[isBingo])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isBingo && <CelebrationAnimation />}
+      <Header isBingo={isBingo}/>
+      <Matrice setIsBingo={setIsBingo} />
     </div>
   );
 }
