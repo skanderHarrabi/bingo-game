@@ -16,6 +16,11 @@ Starting react app at port 3000
 $ npm start
 ```
 
+### Packages
+-React
+-tailwind
+-react confetti
+
 ### ScreenShots
 
 <img width="1278" alt="Screenshot 2022-10-04 at 23 17 16" src="https://user-images.githubusercontent.com/36156046/193933546-707a7d48-e61c-4692-9dde-39b39f65f6e0.png">
