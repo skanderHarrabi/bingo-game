@@ -16,7 +16,7 @@ export const Matrix = ({setIsBingo}) => {
 
     useEffect(()=>{
         bingoMatrix_selected_states.length>0 && checkBingo();
-    }, [bingoMatrix_selected_states])
+    }, [bingoMatrix_selected_states]);
 
     // check single diagonal, row or column selected
     const checkLineSelected = (x, y, dx, dy) => {
@@ -58,11 +58,11 @@ export const Matrix = ({setIsBingo}) => {
             lineOfBingo(0, 0, 1, 1);
         }
         if(diagonal2IsBingo) {
-            lineOfBingo(0, 0, 1, 1);
+            lineOfBingo(5-1, 0, -1, 1);
         }
         for(let i=0; i<5; i++) {
             const rowIsbingo = checkLineSelected(i,0,0,1);
-            const columnIsBingo = checkLineSelected(0, i, 1, 0)
+            const columnIsBingo = checkLineSelected(0, i, 1, 0);
             if(rowIsbingo) lineOfBingo(i, 0, 0, 1);
             if(columnIsBingo) lineOfBingo(0, i, 1, 0);
         }
@@ -76,10 +76,17 @@ export const Matrix = ({setIsBingo}) => {
     // iniate the matrice
     const fillMatrice = () => {
         let bingoMatrix_selected_states = [];
+        let default_data_duplicate = [...default_data];
+        const middle_card = new CardItem("CONF CALL 😇 BINGO", true);
         for(let i=0; i<5; i++){
             let row = [];
             for(let j=0; j<5; j++) {
-                row = [...row,new CardItem(default_data[i][j], i==2 && j==2 ? true: false)];
+                if(i == 2 && j == 2) row = [...row, middle_card];
+                else {
+                    const randomItemIndex = Math.floor(Math.random() * default_data_duplicate.length);
+                    const randomItem = default_data_duplicate.splice(randomItemIndex, 1);
+                    row = [...row, new CardItem(randomItem[0],false)];
+                }
             }
             bingoMatrix_selected_states = [...bingoMatrix_selected_states, row];
         }
